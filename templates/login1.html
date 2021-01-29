@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+</head>
+
+<body>
+    <h2>Welcome to Pass-manager</h2>
+    <h2>Enter details to create a new account</h2>
+    <form action="/signin" method="post">
+        <table>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" name="username" value="{{request.form.username }}"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email" value="{{request.form.email }}"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="text" name="password" value="{{request.form.password }}"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form><br><br>
+
+    <h2>Login if you already have an account</h2>
+    <form action="/login" method="post">
+        <table>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" name="username"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="text" name="password"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Login"></td>
+            </tr>
+        </table>
+    </form><br><br>
+
+</body>
+
+</html>

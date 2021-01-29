@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Delete record</title>
+    <style>
+        body {
+            background-color: black;
+            text-align: center;
+            padding: 30px;
+
+        }
+
+        h3 {
+            color: white;
+        }
+
+        .mytext {
+            width: 230px;
+            height: 35px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Remove credential from the list</h3>
+    <div>
+
+        <form action="/deleterecord" method="post">
+            <input class="mytext" type="text" name="username" placeholder="Username">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>

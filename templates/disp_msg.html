@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>save details</title>
+    <style>
+    .alert{
+        padding: 20px;
+        background-color: #f44336;
+        color: white;
+        opacity: 1;
+        transition: opacity 0.6s;
+        margin-bottom: 15px;
+    }
+    .closebtn{
+        margin-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .closebtn:hover {
+        color: black    ;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- <h3>{{msg}}</h3> -->
+    <!-- <a href="/">Go back to login page</a> -->
+    <h2>Alert Message</h2>
+    <div class="alert">
+        <span class="closebtn">&times;</span>
+        <strong>{{msg}}</strong>
+    </div>
+</body>
+
+</html>

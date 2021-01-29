@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/login" method="post">
+
+        <link href='static/login.css' rel='stylesheet' type='text/css'>
+        <!-- <img src="a.jpg" height="500" width="500"> -->
+        <div id="navwrapper">
+            <div id="navbar">
+                <table class="tablewrapper">
+                    <tr>
+                        <td class="row1">Email</td>
+                        <td class="row1">Password</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" class="inputtext" name="username">
+                        </td>
+                        <td><input type="text" class="inputtext" name="password">
+                        </td>
+                        <td>
+                            <div>
+                                <input type="submit" value="Login">
+                            </div>
+                        </td>
+                    </tr>
+
+                </table>
+    </form>
+
+    <!-- <h1 class="logowrapper">IMA</h1> -->
+    <form action="/signin" method="post">
+        <table>
+
+            <div id="contentwrapper">
+
+                <div id="rightbod">
+                    <div class="signup bolder">Sign Up</div>
+
+                    <div class="formbox">
+                        <input type="text" class="inputbody in1" name="username" placeholder="Username"
+                            value="{{request.form.username }}">
+                    </div>
+                    <div class="formbox">
+                        <input type="text" class="inputbody in2" name="email" placeholder="Email" value="{{request.form.email }}">
+                    </div>
+                    <div class="formbox">
+                        <input type="text" class="inputbody in2" name="password" placeholder="Password"
+                            value="{{request.form.password }}">
+                    </div>
+                    <div class="formbox">
+                        <button type="submit" class="signbut bolder" value="Submit">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </table>
+    </form>
+</body>
+
+</html>
